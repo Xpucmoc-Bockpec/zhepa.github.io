@@ -64,7 +64,19 @@
                 display: true,
                 text: "каво"
             },
-            bezierCurve: false
+            bezierCurve: false,
+			scales: {
+				xAxes: [{
+					type: 'time',
+					time: {
+						unit: 'day',
+						unitStepSize: 1,
+						displayFormats: {
+							'day': 'MMM DD'
+						}
+					}
+				}]
+			}
         }
     }
 
